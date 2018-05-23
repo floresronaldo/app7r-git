@@ -2,7 +2,7 @@
 
 $(document).ready(function(e) {
     document.addEventListener("deviceready",function(){
-		$('#izquierda').on("swipeleft", function(){
+		$('#izquierda').on("swipeleft",function(){
 			navigator.notification.alert("deslizó hacia la izquierda",function(){"aplicacion 7","Ok"});
 		});//cerar deslizar izquierda
 		$('#derecha').on("swiperight",function(){
