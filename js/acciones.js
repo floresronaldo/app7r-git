@@ -4,8 +4,8 @@ $(document).ready(function(e) {
     document.addEventListener("deviceready",function(){
 		$('#izquierda').on("swipeleft", function(){
 			navigator.notification.alert("deslizó hacia la izquierda",function(){"aplicacion 7","Ok"});
-		});
-		$('#derecha').on("swiperinght",function(){
+		});//cerar deslizar izquierda
+		$('#derecha').on("swiperight",function(){
 			navigator.notification.confirm("¿Que quieres hacer?",function(op){
 				switch(op)
 				{
